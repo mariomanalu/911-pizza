@@ -86,6 +86,11 @@ try {
     recognition.stop();
     instructions.text('Voice recognition paused.');
   });
+
+  // TODO: Order now -> Send a message to 911 via Twilio.
+  $('#order-now-btn').on('click', function(e) {
+   
+  });
   
   // Sync the text inside the text area with the noteContent variable.
   noteTextarea.on('input', function() {
