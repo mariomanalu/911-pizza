@@ -8,6 +8,8 @@
       <meta name="description" content="911 emergency pizza application"/>
       <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=K2D:300,400,500,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Bootstrap CSS / Color Scheme -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -18,7 +20,7 @@
             <header class = "container">
                   <div class = "content">
                         <div class="logo-img">
-                              <img src="/public/img/moonlight-4.png" alt="logo">
+                              <img src="/img/moonlight-4.png" alt="logo">
                         </div>
                         <h2 class="heading-brand ">911 Pizza</h2>
                         <div class = "menu">
@@ -35,16 +37,16 @@
                               <div class="green"></div>
                           </div>
                         <div class="app">
-                              <div class = "card1">
+                              <div class = "card1" data-aos="fade-in" data-aos-duration="3000">
                                     <h1 class="app-title text-uppercase">911 Pizza will keep you safe and sound!</h1>
                                     <p class="lead mb-5">Order through voice recognition now and help will get in your way as soon as possible.</p>
                                     <div class="image1">
-                                          <img src="/public/img/pizzzas.png" alt="pizzasss">
+                                          <img src="/img/pizzzas.png" alt="pizzasss">
                                     </div>
                                  
                               </div>
 
-                              <div class = "card2">
+                              <div class = "card2" data-aos="fade-in" data-aos-duration="3000">
                                     <h3 class="text-uppercase">Order Delicious Homemade 911 Pizzas</h3>
                                     <button class = "btn-grad" id="start-record-btn" title="Start Recording">Start Ordering</button>
                                     <button class = "btn-grad" id="pause-record-btn" title="Pause Recording">Finish Ordering</button>
@@ -76,5 +78,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
 <script src="scripts.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
