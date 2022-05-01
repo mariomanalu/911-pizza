@@ -7,16 +7,23 @@ console.log('server on' + port);
 
 
 app.post('/order', (req, res) => {
-    const accountSid = 'REDACTED';
-    const authToken = 'REDATED';
-    const twilio = require('twilio');
-    const client = new twilio(accountSid, authToken);
+    // console.log("HI");
+    // const accountSid = 'REDACTED';
+    // const authToken = 'REDACTED';
+    // const twilio = require('twilio');
+    // const client = new twilio(accountSid, authToken);
 
-    client.messages
-      .create({
-        body: 'This is the ship that made the Kessel Run in fourteen parsecs?',
-        from: 'REDACTED',
-        to: 'REDACTED'
-      })
-      .then(message => console.log(message.sid));
+    // client.messages
+    //   .create({
+    //     body: 'REDACTED',
+    //     from: 'REDACTED',
+    //     to: 'REDACTED'
+    //   })
+    //   .then(message => console.log(message.sid));
+
+    res.redirect('/success')
 });
+
+app.get('/success', function (req, res) {
+    res.sendFile(__dirname + '/public/success.html')
+  })
