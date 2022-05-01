@@ -1,0 +1,285 @@
+* {
+      text-decoration: none !important;
+}
+
+a:link {
+      text-decoration: none;
+
+}
+
+.noHover {
+      pointer-events: none;
+}
+
+section {
+      background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+}
+
+.content {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0rem;
+}
+
+.code-window {
+      margin: 2rem 0rem;
+      padding: 3rem;
+      background-color: rgba(255, 255, 255, 0.3);
+      border: 1px solid #fff;
+      box-shadow: 9px 8px 20px #c498d1;
+}
+
+.app {
+      display: flex;
+}
+
+.card1 {
+      width: 55%;
+      margin: 2rem 0rem;
+}
+
+.card2 {
+      width: 45%;
+      margin-left: 5rem;
+      margin-top: 3rem;
+}
+
+
+.btn-grad {
+      background-image: linear-gradient(to right, #000000 0%, #53346D 51%, #000000 100%)
+}
+
+.btn-grad {
+      margin: 3px;
+      padding: 5px 15px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      border-radius: 10px;
+      display: inline;
+      border: none;
+      cursor: pointer;
+      font-size: 12px;
+}
+
+.btn-grad:hover {
+      background-position: right center;
+      /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+}
+
+
+.btn-order {
+      background-image: linear-gradient(to right, #7b4397 0%, #dc2430 51%, #7b4397 100%)
+}
+
+.btn-order {
+      padding: 10px 45px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+}
+
+.btn-order:hover {
+      background-position: right center;
+      /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+}
+
+.form-control {
+      margin: 1rem 0rem;
+}
+
+.image1 {
+      width: 500px;
+      height: 250px;
+      margin: 0 auto;
+}
+
+.image1 img {
+      width: 100%;
+}
+
+.logo-img {
+      width: 80px;
+      height: 80px;
+
+}
+
+.logo-img img {
+      width: 100%;
+}
+
+.menu-image {
+      width: 250px;
+      height: 250px;
+      margin: 0 auto;
+}
+
+.menu-image img {
+      width: 100%;
+}
+
+.heading-brand {
+      color: #fff;
+      text-shadow: -1px 0px 10px #fff;
+      font-size: 2rem;
+}
+
+.app-title {
+      color: #fff;
+      text-shadow: -1px 0px 10px #daa1f5;
+}
+
+
+.listen-note {
+      background-image: linear-gradient(to right, #000000 0%, #53346D 51%, #000000 100%)
+}
+
+.listen-note {
+      margin-left: 10px;
+      padding: 5px 10px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 10px;
+      align-items: center;
+}
+
+.listen-note:hover {
+      background-position: right center;
+      /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+}
+
+
+
+.delete-note {
+      background-image: linear-gradient(to right, #000000 0%, #e74c3c 51%, #000000 100%)
+}
+
+.delete-note {
+      padding: 5px 10px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 10px;
+      align-items: center;
+}
+
+.delete-note:hover {
+      background-position: right center;
+      /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+}
+
+.card {
+      width: 50%;
+      background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      border: 0.25rem solid #ac00f9;
+}
+
+.card-title {
+      font-size: 1.5rem;
+}
+
+.card-subtitle {
+      color: #ac00f9 !important;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+      .app {
+            display: flex;
+            flex-direction: column;
+      }
+
+      .card1 {
+            width: 100%;
+            margin-top: 2rem;
+      }
+
+      .card2 {
+            width: 100%;
+            margin-left: 0rem;
+            margin-top: 0rem;
+      }
+
+      .image1 {
+            width: 100%;
+            height: 300px;
+            margin: 0 auto;
+      }
+
+      .card {
+            width: 100%;
+            margin-bottom: 1rem;
+      }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+      .app {
+            display: flex;
+            flex-direction: column;
+      }
+
+      .code-window {
+            padding: 1rem;
+      }
+
+
+      .card1 {
+            width: 100%;
+            margin-top: 2rem;
+      }
+
+      .card2 {
+            width: 100%;
+            margin-left: 0rem;
+            margin-top: 0rem;
+      }
+
+      .image1 {
+            width: 100%;
+            height: 150px;
+            margin: 0 auto;
+      }
+
+      .card {
+            width: 100%;
+            margin-bottom: 1rem;
+      }
+
+
+}
