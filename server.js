@@ -20,6 +20,14 @@ app.post('/order', (req, res) => {
     //     to: 'REDACTED'
     //   })
     //   .then(message => console.log(message.sid));
+    const client = require('twilio')(accountSid, authToken);
+    client.calls
+      .create({
+         url: 'REDACTED',
+         to: 'REDACTED',
+         from: 'REDACTED'
+       })
+      .then(call => console.log(call.sid));
 
     res.redirect('/success')
 });
