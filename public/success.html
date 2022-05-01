@@ -8,6 +8,8 @@
       <meta name="description" content="911 emergency pizza application"/>
       <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=K2D:300,400,500,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Bootstrap CSS / Color Scheme -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -18,17 +20,31 @@
             <header class = "container">
                   <div class = "content">
                         <div class="logo-img">
-                              <!-- <img src="https://previews.dropbox.com/p/thumb/ABjAiIykHIvIZd3o71OVi6Tl-QhIej-TLgyuuROPm3FiyKsw4HiFcsZebdln2J4lHsJa85-ETOctmHB6qKdp2i9CaABe2rRQmaw8tGqvBFlUBk-yzCMeciyD0JpVdZk6t2qV8TR8fSPvWXaMiviy0SP4thcOE4RwjghZ9hem8ZXvCbclxmY8hGkHdmZL6CI20j73wCY2w45i-rUDGJ_hTNeMvaRDvOsR2phviI9AHnQcKoqyOn4euUcfB_u52ZEmhpzULyC8A2dMd8JrMFwfU4nUblv7p6C1h--ml888kUGj2G0rI9L9xzhYOWEL6CjWSxqK8r3mjqdmbhgvbQEW4DFep_31Z84x5YhlKF-wKJ3Ewrh_pcQvKJ5hZyD1Zx88rqw/p.png" alt="pizza"> -->
+                              <img src="/img/moonlight-4.png" alt="pizza">
                         </div>
-                        <h2 class="heading-brand ">911 Pizza</h2>
+                        <h2 class="heading-brand "> 911 Pizza</h2>
+                        <div class = "menu">
+                              <a href="index.html" class="btn btn-dark">Home</a>
+                        </div>
                   </div>
             </header>
 
             <div class ="container">
-                  <h1 class = "heading-brand"> We are sending the Pizza to you. They are on their way. 
-                      <br>
-                      In the meantime, be safe.
-                    </h1>
+                  <div class="code-window ">
+                        <div class="dots">
+                              <div class="red"></div>
+                              <div class="orange"></div>
+                              <div class="green"></div>
+                          </div>
+                        <div class="selction mt-3" data-aos="fade-in" data-aos-duration="3000">
+                              <div class="menu-image">
+                                    <img src="/img/pizza.png" alt="pizza">
+                              </div>
+                              <h1 class = "heading-brand"> We are sending the Pizza to you. They are on their way. 
+                                <br>
+                                In the meantime, be safe.
+                              </h1>
+                  </div>
             </div>
             <footer>
                   <p style="text-align: center; color: #fff;"> Mario Backend / Stephanie Frontend</p>
@@ -39,5 +55,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
 <script src="scripts.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

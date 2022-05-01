@@ -15,7 +15,7 @@ app.post('/order', (req, res) => {
 
     // client.messages
     //   .create({
-    //     body: 'REDACTED',
+    //     body: 'REDACTE',
     //     from: 'REDACTED',
     //     to: 'REDACTED'
     //   })
