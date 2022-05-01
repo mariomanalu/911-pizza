@@ -29,9 +29,7 @@
                 <h1>911 Pizza will keep you safe and sound!</h1>
                 <p class="lead mb-5">Order through voice recognition now and help will get in your way as soon as possible.</p>
                 
-                    <button id="start-record-btn" title="Start Recording">Start Ordering</button>
-                    <button id="pause-record-btn" title="Pause Recording">Finish Ordering</button>
-                    <button id="save-note-btn" title="Save Note">Save Order</button>
+                    
             </div>
         </div>
         <div class="row mt-5">
@@ -44,6 +42,9 @@
                     </div>
                     <div class="app"> 
                         <h3>Order Delicious Homemade 911 Pizzas</h3>
+                        <button id="start-record-btn" title="Start Recording">Start Ordering</button>
+                    <button id="pause-record-btn" title="Pause Recording">Finish Ordering</button>
+                    <button id="save-note-btn" title="Save Note">Save Order</button>
                         <div class="input-single">
                             <textarea id="note-textarea" placeholder="Tell us exactly what you want from the menu." rows="6"></textarea>
                         </div>         
@@ -54,7 +55,11 @@
                                 <p class="no-notes">You don't have any orders.</p>
                             </li>
                         </ul>
-                        <button id="order-now-btn" title="Save Note">Order Now</button>
+                        <form action="http://localhost:8000/order" method="POST">
+                            <!--Other fields-->
+                            <button id="order-now-btn" type="submit" title="Save Note">Order Now</button>
+                        </form>
+                        
                     </div>
                 </div>
             </div>
@@ -67,6 +72,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
+
